@@ -13,11 +13,13 @@ describe('calculateStylePoints', () => {
         const expected = 48.5;
         assert.equal(actual, expected);
     });
+    
     it('should return style points with double max grades', () => {
         const actual = calculateStylePoints([12, 15, 16, 18, 18]);
         const expected = 49;
         assert.equal(actual, expected);
     });
+    
     it('should return style points with double min grades', () => {
         const actual = calculateStylePoints([12, 12, 16, 18.5, 17]);
         const expected = 45;
