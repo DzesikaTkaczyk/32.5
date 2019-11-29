@@ -43,19 +43,19 @@ describe('calculateDistancePoints', () => {
     });
 
     describe('normal', () => {
-        it('should return above average result on big normal', () => {
+        it('should return above average result on normal hill', () => {
             const actual = calculateDistancePoints(160, 'normal', 98);
             const expected = 184;
             assert.equal(actual, expected);
         });
 
-        it('should return below average result on big normal', () => {
+        it('should return below average result on normal hill', () => {
             const actual = calculateDistancePoints(82.5, 'normal', 98);
             const expected = 29;
             assert.equal(actual, expected);
         });
 
-        it('should return average result on big normal', () => {
+        it('should return average result on normal hill', () => {
             const actual = calculateDistancePoints(98, 'normal', 98);
             const expected = 60;
             assert.equal(actual, expected);
